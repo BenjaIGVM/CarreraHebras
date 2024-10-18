@@ -59,8 +59,8 @@ void mostrarProgreso(int distanciaTotal)// Función para mostrar el progreso de 
                   << std::string(progresoEscalado, '=') << ">"
                   << std::string(100 - progresoEscalado, ' ')
                   << " " << auto_.obtenerDistancia() << "m"
-                  << " avance: " << auto_.obtenerUltimoAvance() << "m";
-                  << (auto_.obtenerDistancia() >= distanciaTotal ? " \033[1;32m(Auto " + std::to_string(auto_.obtenerId()) + " termin   la carrera!)\033[0m" : "") << "\n";
+                  << " avance: " << auto_.obtenerUltimoAvance() << "m"
+                  << (auto_.obtenerDistancia() >= distanciaTotal ? " \033[1;32m(Auto " + std::to_string(auto_.obtenerId()) + " terminó la carrera!)\033[0m" : "") << "\n";
   }
     std::cout << std::flush;// Asegura que la salida se muestre inmediatamente
 }
