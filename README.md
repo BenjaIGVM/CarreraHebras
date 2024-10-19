@@ -41,7 +41,7 @@ sudo dnf install git
    make carrera
    ```
 
-## 🏁 Ejecución
+## 🏁 Ejecución 🏆
 
 Para ejecutar el programa, utiliza el siguiente formato:
 
@@ -63,5 +63,3 @@ Este comando iniciará una carrera de 100 metros con 4 autos compitiendo.
 ⚠️ **Nota**: Si no se proporcionan los argumentos correctos o se ingresan más de los necesarios, el programa mostrará un mensaje con las instrucciones de uso adecuadas.
 
 ---
-
-¡Disfruta de la carrera y que gane el mejor auto! 🏆
