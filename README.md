@@ -1,12 +1,67 @@
-# Carrera de autos usando hebras 
+# 🏎️ Carrera de Autos usando Hebras
 
-Este programa simula una carrera de autos usando la libreria estándar de hebras en C++. Cada auto avanza en una hebra distinta, una cantidad aleatoria de "metros" deteniendose cada cierto tiempo, también aleatorio, para representar la velocidad. La carrera finaliza cuando todos los autos hayan llegado a la meta, mostrando una lista con los lugares correspondientes.
+Este programa simula una carrera de autos utilizando la librería estándar de hebras en C++. Cada auto avanza en su propia hebra, recorriendo una distancia aleatoria de "metros" y haciendo pausas aleatorias para simular diferentes velocidades. La carrera concluye cuando todos los autos cruzan la meta, mostrando una lista con las posiciones finales.
 
-# Compilar
-Primero que nada se debe clonar este repositorio en el directorio destino usando el comando `git clone https://github.com/BenjaIGVM/CarreraHebras.git`, una vez hecho esto, posicionarse en la carpeta que se clonará, la cual contiene todos los archivos necesarios.
+## 🚀 Compilación
 
-Para compilar este programa se debe usar el comando `make` en la terminal. Opcionalmente si eso no funciona, probar con `make carrera`.
+### Prerequisitos
 
-# Ejecutar
+Asegúrate de tener instalado Git en tu sistema. Si no lo tienes, sigue estas instrucciones:
 
-La ejecución se hace con el comando `./carrera` añadiendo como argumento los metros totales que tendrá la carera y la cantidad de autos que van a competir, **separados por un espacio y en ese orden**. Si no se ingresan los parametros indicados o se intenta ingresar más, el programa simplemente imprimirá un mensaje sobre como es el correcto uso del comando.
+#### Ubuntu/Debian
+```bash
+sudo apt update
+sudo apt install git
+```
+
+#### Fedora
+```bash
+sudo dnf install git
+```
+
+### Pasos para compilar
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/BenjaIGVM/CarreraHebras.git
+   ```
+
+2. Navega al directorio del proyecto:
+   ```bash
+   cd CarreraHebras
+   ```
+
+3. Compila el programa:
+   ```bash
+   make
+   ```
+
+   Si el comando anterior no funciona, intenta:
+   ```bash
+   make carrera
+   ```
+
+## 🏁 Ejecución
+
+Para ejecutar el programa, utiliza el siguiente formato:
+
+```bash
+./carrera [metros_de_la_carrera] [cantidad_de_autos]
+```
+
+- `metros_de_la_carrera`: Distancia total de la carrera en metros.
+- `cantidad_de_autos`: Número de autos que participarán en la carrera.
+
+### Ejemplo
+
+```bash
+./carrera 100 4
+```
+
+Este comando iniciará una carrera de 100 metros con 4 autos compitiendo.
+
+⚠️ **Nota**: Si no se proporcionan los argumentos correctos o se ingresan más de los necesarios, el programa mostrará un mensaje con las instrucciones de uso adecuadas.
+
+---
+
+¡Disfruta de la carrera y que gane el mejor auto! 🏆
