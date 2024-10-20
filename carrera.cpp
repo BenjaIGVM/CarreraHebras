@@ -50,9 +50,10 @@ int autosTerminados = 0;
 void mostrarProgreso(int distanciaTotal)// Función para mostrar el progreso de la carrera
  {
     std::lock_guard<std::mutex> lock(mtx);// Bloqueo para evitar escrituras simultáneas
-    std::cout << "\033[2J\033[H";  // Limpia la pantalla
+    std::cout << "\033[2J\033[H";  // codigo ascii que limpia la pantalla y devuelve el cursor al inicio
     for (const auto& auto_ : autos) {
-        int progresoEscalado = (auto_.obtenerDistancia() * 100) / distanciaTotal; // Calcula el progreso en porcentaje
+        int progresoEscalado = (auto_.obtenerDistancia() * 100) / distanciaTotal; 
+        // Calcula el progreso en porcentaje para tener un limite al imprimir la barra de progreso
 
         // Muestra la barra de progreso y la información del auto
         std::cout << "Auto " << auto_.obtenerId() << ": "
@@ -104,7 +105,7 @@ int main(int argc, char* argv[])
         autos.emplace_back(i);
     }
 
-    // Crea y lanza un hilo para cada auto
+    // Crea y lanza una hebra para cada auto
     std::vector<std::thread> hebras;
     for (auto& auto_ : autos) {
         hebras.emplace_back(carrera, std::ref(auto_), distanciaTotal);
