@@ -61,5 +61,5 @@ Para ejecutar el programa, utiliza el siguiente formato:
 Este comando iniciará una carrera de 100 metros con 4 autos compitiendo.
 
 ⚠️ **Nota**: Si no se proporcionan los argumentos correctos o se ingresan más de los necesarios, el programa mostrará un mensaje con las instrucciones de uso adecuadas.
-
+⚠️ **Nota**: Cuando se ejecute en la terminal, se recomienda hacerlo con la pantalla completa.
 ---
